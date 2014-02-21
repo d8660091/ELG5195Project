@@ -1,0 +1,62 @@
+v 3
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/uart_tx.vhd" "20100401165626.000" "20140220232040.227":
+  entity uart_tx at 28( 1184) + 0 on 49;
+  architecture behavioral of uart_tx at 43( 1815) + 0 on 50;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/uart_rx.vhd" "20100104165133.000" "20140220232040.227":
+  entity uart_rx at 29( 1201) + 0 on 47;
+  architecture behavioral of uart_rx at 44( 1714) + 0 on 48;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/uart.vhd" "20100401165626.000" "20140220232040.227":
+  entity uart at 28( 1212) + 0 on 43;
+  architecture behavioral of uart at 51( 1911) + 0 on 44;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/status_reg.vhd" "20100104165133.000" "20140220232040.227":
+  entity status_reg at 27( 1198) + 0 on 41;
+  architecture behavioral of status_reg at 45( 1758) + 0 on 42;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/segment7.vhd" "20100104165133.000" "20140220232040.227":
+  entity segment7 at 28( 1203) + 0 on 19;
+  architecture behavioral of segment7 at 53( 1852) + 0 on 20;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/register_file.vhd" "20100116151228.000" "20140220232040.227":
+  entity register_file at 28( 1218) + 0 on 35;
+  architecture behavioral of register_file at 60( 2494) + 0 on 36;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/reg_16.vhd" "20100104165133.000" "20140220232040.227":
+  entity reg_16 at 27( 1194) + 0 on 39;
+  architecture behavioral of reg_16 at 41( 1561) + 0 on 40;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/prog_mem_content.vhd" "20100109105956.000" "20140220232040.227":
+  package prog_mem_content at 2( 2) + 0 on 28;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/prog_mem.vhd" "20100109105956.000" "20140220232040.227":
+  entity prog_mem at 27( 1197) + 0 on 29;
+  architecture behavioral of prog_mem at 48( 1833) + 0 on 30;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/opc_fetch.vhd" "20100201190605.000" "20140220232040.227":
+  entity opc_fetch at 28( 1202) + 0 on 21;
+  architecture behavioral of opc_fetch at 49( 1919) + 0 on 22;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/opc_deco.vhd" "20100308183005.000" "20140220232040.227":
+  entity opc_deco at 28( 1197) + 0 on 24;
+  architecture behavioral of opc_deco at 62( 2591) + 0 on 25;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/io.vhd" "20100307152637.000" "20140220232040.227":
+  entity io at 28( 1217) + 0 on 17;
+  architecture behavioral of io at 51( 2022) + 0 on 18;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/data_path.vhd" "20100104165133.000" "20140220232040.227":
+  entity data_path at 28( 1193) + 0 on 26;
+  architecture behavioral of data_path at 70( 3000) + 0 on 27;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/data_mem.vhd" "20100104165133.000" "20140220232040.227":
+  entity data_mem at 28( 1194) + 0 on 37;
+  architecture behavioral of data_mem at 43( 1623) + 0 on 38;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/cpu_core.vhd" "20100104165133.000" "20140220232040.227":
+  entity cpu_core at 28( 1213) + 0 on 15;
+  architecture behavioral of cpu_core at 47( 1886) + 0 on 16;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/common.vhd" "20100116151228.000" "20140220232040.227":
+  package common at 28( 1193) + 0 on 23;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/baudgen.vhd" "20100104165133.000" "20140220232040.227":
+  entity baudgen at 28( 1193) + 0 on 45;
+  architecture behavioral of baudgen at 44( 1669) + 0 on 46;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/avr_fpga.vhd" "20100104165133.000" "20140220232040.227":
+  entity avr_fpga at 28( 1188) + 0 on 13;
+  architecture behavioral of avr_fpga at 43( 1634) + 0 on 14;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "src/alu.vhd" "20100305160402.000" "20140220232040.227":
+  entity alu at 28( 1194) + 0 on 33;
+  architecture behavioral of alu at 52( 2102) + 0 on 34;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "test/RAMB4_S4_S4.vhd" "20100104165133.000" "20140220232040.227":
+  entity ramb4_s4_s4 at 28( 1188) + 0 on 31;
+  architecture behavioral of ramb4_s4_s4 at 84( 4299) + 0 on 32;
+file "/Users/xudeng/Dropbox/Course/ELG5195/cpu_lecture/trunk/" "test/test_tb.vhd" "20100104165133.000" "20140220232040.227":
+  entity testbench at 28( 1194) + 0 on 11;
+  architecture behavioral of testbench at 36( 1338) + 0 on 12;
