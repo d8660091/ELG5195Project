@@ -24,7 +24,7 @@
 -- Description:    arithmetic logic unit of a CPU
 --
 -------------------------------------------------------------------------------
---
+-- dx
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 use IEEE.std_logic_ARITH.ALL;
