@@ -10,6 +10,12 @@ Current Work
 - Report
 - Rewrite all codes
 
+Installation
+--------------
+
+```sh
+git clone https://github.com/d8660091/ELG5195Project.git
+```
 
 Useful links:
 ----
