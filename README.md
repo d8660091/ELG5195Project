@@ -14,9 +14,9 @@ Current Work
 Useful links:
 ----
 
--[Xilinx], for simulation and synthesis. 
+ - [Xilinx], for simulation and synthesis. 
 
--[Presentation], deadline is March 31st.
+- [Presentation], deadline is March 31st.
 
 -[Report], deadline is April 10th.
 
