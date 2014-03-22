@@ -6,9 +6,9 @@ This is all the source and schematic files and some useful information.
 Current Work
 ----
 
--Presentation
--Report
--Rewrite all codes
+ - Presentation
+ - Report
+ - Rewrite all codes
 
 
 Useful links:
