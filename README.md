@@ -1,7 +1,7 @@
-ELG5195Project PipelineProcessor
+ELG5195 Project: Pipeline Processor
 ==============
 
-This is all the source and schematic files.
+This is all the source and schematic files and some useful information.
 
 Current Work
 ----
