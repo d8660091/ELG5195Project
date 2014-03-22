@@ -6,19 +6,19 @@ This is all the source and schematic files and some useful information.
 Current Work
 ----
 
- - Presentation
- - Report
- - Rewrite all codes
+- Presentation
+- Report
+- Rewrite all codes
 
 
 Useful links:
 ----
 
- - [Xilinx], for simulation and synthesis. 
+- [Xilinx], for simulation and synthesis. 
 
 - [Presentation], deadline is March 31st.
 
--[Report], deadline is April 10th.
+- [Report], deadline is April 10th.
 
 [Xilinx]:http://www.xilinx.com/support/download.html
 [Presentation]:https://docs.google.com/presentation/d/1pgnpIiBiK8rRY5TdIJ_D0N1uYqSnc1MUy1ZwBppbGjs/edit?usp=sharing
