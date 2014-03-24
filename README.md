@@ -21,10 +21,9 @@ Useful links:
 ----
 
 - [Xilinx], for simulation and synthesis. 
-
 - [Presentation], deadline is March 31st.
-
 - [Report], deadline is April 10th.
+- [Instruction Set]
 
 [Xilinx]:http://www.xilinx.com/support/download.html
 [Presentation]:https://docs.google.com/presentation/d/1pgnpIiBiK8rRY5TdIJ_D0N1uYqSnc1MUy1ZwBppbGjs/edit?usp=sharing
