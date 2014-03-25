@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 --
 -- Module Name:    opc_fetch - Behavioral 
--- Create Date:    13:00:44 10/30/2009 
+-- Create Date:    3/24/2014 
 -- Description:    the opcode fetch stage of a CPU.
 --
 -------------------------------------------------------------------------------
---
+
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 use IEEE.std_logic_ARITH.ALL;
@@ -44,7 +44,7 @@ end component;
 signal P_OPC            : std_logic_vector(31 downto 0);
 signal P_PC             : std_logic_vector(15 downto 0);
 
-signal L_INVALIDATE     : std_logic;
+signal L_INVALIDDATA     : std_logic;
 signal L_LONG_OP        : std_logic;
 signal L_NEXT_PC        : std_logic_vector(15 downto 0);
 signal L_OPC_1_0123     : std_logic;
@@ -155,7 +155,7 @@ begin
     L_OPC_F_CDEF      <= '1' when ( P_OPC(15 downto  10) = "111111")
                     else '0';
 
-    L_WAIT <=  L_T0 and (not L_INVALIDATE)
+    L_WAIT <=  L_T0 and (not L_INVALIDDATA)
                     and (not I_INTVEC(5))
                     and (L_OPC_1_0123      or       -- CPSE
                          L_OPC_8A_014589CD or       -- LDD
@@ -165,9 +165,9 @@ begin
                          L_OPC_9_9B        or       -- SBIC, SBIS
                          L_OPC_F_CDEF);             -- SBRC, SBRS
 
-    L_INVALIDATE <= I_CLR or I_SKIP;
+    L_INVALIDDATA <= I_CLR or I_SKIP;
 
-    Q_OPC <= X"00000000" when (L_INVALIDATE = '1')
+    Q_OPC <= X"00000000" when (L_INVALIDDATA = '1')
         else P_OPC       when (I_INTVEC(5) = '0')
         else (X"000000" & "00" & I_INTVEC);     -- "interrupt opcode"
 
