@@ -8,7 +8,7 @@ Current Work
 
 - Presentation
 - Report
-- Rewrite all codes
+- Rewrite all codes (finished: prog_mem)
 
 Installation
 --------------
