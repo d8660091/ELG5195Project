@@ -1,30 +1,3 @@
--------------------------------------------------------------------------------
--- 
--- Copyright (C) 2009, 2010 Dr. Juergen Sauermann
--- 
---  This code is free software: you can redistribute it and/or modify
---  it under the terms of the GNU General Public License as published by
---  the Free Software Foundation, either version 3 of the License, or
---  (at your option) any later version.
---
---  This code is distributed in the hope that it will be useful,
---  but WITHOUT ANY WARRANTY; without even the implied warranty of
---  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
---  GNU General Public License for more details.
---
---  You should have received a copy of the GNU General Public License
---  along with this code (see the file named COPYING).
---  If not, see http://www.gnu.org/licenses/.
---
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
---
--- Module Name:    alu - Behavioral 
--- Create Date:    13:51:24 11/07/2009 
--- Description:    arithmetic logic unit of a CPU
---
--------------------------------------------------------------------------------
--- dx
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 use IEEE.std_logic_ARITH.ALL;
