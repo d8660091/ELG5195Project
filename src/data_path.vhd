@@ -27,7 +27,7 @@ entity data_path is
             I_WE_F      : in  std_logic;
             I_WE_M      : in  std_logic_vector( 1 downto 0);
             I_WE_XYZS   : in  std_logic;
- 
+
             Q_ADR       : out std_logic_vector(15 downto 0);
             Q_DOUT      : out std_logic_vector( 7 downto 0);
             Q_INT_ENA   : out std_logic;

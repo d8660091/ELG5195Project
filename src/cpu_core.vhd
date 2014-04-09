@@ -6,7 +6,6 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity cpu_core is
     port (  I_CLK       : in  std_logic;
             I_CLR       : in  std_logic;
-            I_INTVEC    : in  std_logic_vector( 5 downto 0);
             I_DIN       : in  std_logic_vector( 7 downto 0);
 
             Q_OPC       : out std_logic_vector(15 downto 0);
@@ -23,7 +22,6 @@ component opc_fetch
     port(   I_CLK       : in  std_logic;
 
             I_CLR       : in  std_logic;
-            I_INTVEC    : in  std_logic_vector( 5 downto 0);
             I_NEW_PC    : in  std_logic_vector(15 downto 0);
             I_LOAD_PC   : in  std_logic;
             I_PM_ADR    : in  std_logic_vector(11 downto 0);
@@ -108,7 +106,7 @@ component data_path
             I_WE_F      : in  std_logic;
             I_WE_M      : in  std_logic_vector( 1 downto 0);
             I_WE_XYZS   : in  std_logic;
- 
+
             Q_ADR       : out std_logic_vector(15 downto 0);
             Q_DOUT      : out std_logic_vector( 7 downto 0);
             Q_INT_ENA   : out std_logic;
@@ -130,7 +128,6 @@ signal R_ADR            : std_logic_vector(15 downto 0);
 -- local signals
 --
 signal L_DIN            : std_logic_vector( 7 downto 0);
-signal L_INTVEC_5       : std_logic;
 
 begin
 
@@ -138,8 +135,6 @@ begin
     port map(   I_CLK       => I_CLK,
 
                 I_CLR       => I_CLR,
-                I_INTVEC(5) => L_INTVEC_5,
-                I_INTVEC(4 downto 0) => I_INTVEC(4 downto 0),
                 I_LOAD_PC   => R_LOAD_PC,
                 I_NEW_PC    => R_NEW_PC,
                 I_PM_ADR    => R_ADR(11 downto 0),
@@ -149,7 +144,7 @@ begin
                 Q_OPC       => F_OPC,
                 Q_T0        => F_T0,
                 Q_PM_DOUT   => F_PM_DOUT);
- 
+
     odec : opc_deco
     port map(   I_CLK       => I_CLK,
 
@@ -211,7 +206,6 @@ begin
                 Q_WE_IO     => Q_WE_IO);
 
     L_DIN <= F_PM_DOUT when (D_PMS = '1') else I_DIN(7 downto 0);
-    L_INTVEC_5 <= I_INTVEC(5) and R_INT_ENA;
     Q_ADR_IO <= R_ADR(7 downto 0);
 
 end Behavioral;

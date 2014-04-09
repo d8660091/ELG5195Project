@@ -1,29 +1,28 @@
--------------------------------------------------------------------------------
---
--- Module Name:    opc_fetch - Behavioral 
--- Create Date:    3/24/2014 
--- Description:    the opcode fetch stage of a CPU.
---
--------------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 use IEEE.std_logic_ARITH.ALL;
 use IEEE.std_logic_UNSIGNED.ALL;
 
 entity opc_fetch is
-    port (  I_CLK       : in  std_logic;
+    port (  I_CLK       : in  std_logic; --Clock Input.
 
-            I_CLR       : in  std_logic;
-            I_INTVEC    : in  std_logic_vector( 5 downto 0);
+            I_CLR       : in  std_logic;  --Clear Signal.
+            --Program Counter input indicator.
             I_LOAD_PC   : in  std_logic;
+            --Program Counter input value.
             I_NEW_PC    : in  std_logic_vector(15 downto 0);
+            --Address port for executing stage.
             I_PM_ADR    : in  std_logic_vector(11 downto 0);
+            --Skip indicator drive by executing stage.
             I_SKIP      : in  std_logic;
 
+            --Opcode output.
             Q_OPC       : out std_logic_vector(31 downto 0);
+            --Current Program Counter value.
             Q_PC        : out std_logic_vector(15 downto 0);
+            --Output for reading data from executing stage.
             Q_PM_DOUT   : out std_logic_vector( 7 downto 0);
+            --2 clocks instruction indicator.
             Q_T0        : out std_logic);
 end opc_fetch;
 
@@ -156,7 +155,6 @@ begin
                     else '0';
 
     L_WAIT <=  L_T0 and (not L_INVALIDDATA)
-                    and (not I_INTVEC(5))
                     and (L_OPC_1_0123      or       -- CPSE
                          L_OPC_8A_014589CD or       -- LDD
                          L_OPC_9_01        or       -- LDS, LD, LPM, POP
@@ -167,9 +165,7 @@ begin
 
     L_INVALIDDATA <= I_CLR or I_SKIP;
 
-    Q_OPC <= X"00000000" when (L_INVALIDDATA = '1')
-        else P_OPC       when (I_INTVEC(5) = '0')
-        else (X"000000" & "00" & I_INTVEC);     -- "interrupt opcode"
+    Q_OPC <= X"00000000" when (L_INVALIDDATA = '1') else P_OPC;
 
     Q_PC <= P_PC;
     Q_T0 <= L_T0;
