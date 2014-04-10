@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report.aux
+The style file: plain.bst
+Database file #1: bib.bib
+"{" immediately follows a field name---line 34 of file bib.bib
+ : @INPROCEEDINGS
+ :               {979815,
+I'm skipping whatever remains of this entry
+Warning--entry type for "A1" isn't style-file defined
+--line 96 of file bib.bib
+Warning--entry type for "A2" isn't style-file defined
+--line 101 of file bib.bib
+Warning--entry type for "A3" isn't style-file defined
+--line 106 of file bib.bib
+Warning--entry type for "A4" isn't style-file defined
+--line 111 of file bib.bib
+Warning--entry type for "A5" isn't style-file defined
+--line 116 of file bib.bib
+Warning--entry type for "A0" isn't style-file defined
+--line 121 of file bib.bib
+Warning--to sort, need author or key in A1
+Warning--to sort, need author or key in A2
+Warning--to sort, need author or key in A3
+Warning--to sort, need author or key in A4
+Warning--to sort, need author or key in A5
+You've used 13 entries,
+            2118 wiz_defined-function locations,
+            567 strings with 5658 characters,
+and the built_in function-call counts, 3868 in all, are:
+= -- 370
+> -- 106
+< -- 5
++ -- 46
+- -- 32
+* -- 219
+:= -- 532
+add.period$ -- 29
+call.type$ -- 13
+change.case$ -- 55
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 179
+empty$ -- 395
+format.name$ -- 32
+if$ -- 900
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 7
+newline$ -- 57
+num.names$ -- 16
+pop$ -- 92
+preamble$ -- 1
+purify$ -- 42
+quote$ -- 0
+skip$ -- 175
+stack$ -- 0
+substring$ -- 252
+swap$ -- 62
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 52
+warning$ -- 5
+while$ -- 29
+width$ -- 15
+write$ -- 114
+(There was 1 error message)

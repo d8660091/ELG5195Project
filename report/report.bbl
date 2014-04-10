@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+
+\bibitem{A1}
+http://websrv.cs.fsu.edu/~tyson/cda5155/refs.html.
+
+\bibitem{A3}
+http://www.cs.caltech.edu/courses/cs184/winter2001/slides/day5\_2up.pdf.
+
+\bibitem{A4}
+http://www.cs.iastate.edu/\~prabhu/tutorial/pipeline/compsched.html.
+
+\bibitem{A2}
+http://www.cs.ucsd.edu/classes/wi99/cse141\_b/lectures.html.
+
+\bibitem{A5}
+http://www.mmdb.ece.ucsb.edu/\~ece154/lecture5.pdf.
+
+\bibitem{470344}
+A.E. Casavant.
+\newblock Balancing structural hazards and hardware cost of pipelined
+  processors.
+\newblock In {\em European Design and Test Conference, 1995. ED TC 1995,
+  Proceedings.}, pages 562--566, Mar 1995.
+
+\bibitem{Cloutier:1993:SPI:157485.165053}
+Richard~J. Cloutier and Donald~E. Thomas.
+\newblock Synthesis of pipelined instruction set processors.
+\newblock In {\em Proceedings of the 30th International Design Automation
+  Conference}, DAC '93, pages 583--588, New York, NY, USA, 1993. ACM.
+
+\bibitem{59069}
+G.~Goossens, J.~Rabaey, J.~Vandewalle, and H.~De~Man.
+\newblock An efficient microcode compiler for application specific dsp
+  processors.
+\newblock {\em Computer-Aided Design of Integrated Circuits and Systems, IEEE
+  Transactions on}, 9(9):925--937, Sep 1990.
+
+\bibitem{227847}
+Ing-Jer Huang and A.M. Despain.
+\newblock High level synthesis of pipelined instruction set processors and
+  back-end compilers.
+\newblock In {\em Design Automation Conference, 1992. Proceedings., 29th
+  ACM/IEEE}, pages 135--140, Jun 1992.
+
+\bibitem{979815}
+Cheng-Tsung Hwang, Yu-Chin Hsu, and Youn-Long Lin.
+\newblock Scheduling for functional pipelining and loop winding.
+\newblock In {\em Design Automation Conference, 1991. 28th ACM/IEEE}, pages
+  764--769, June 1991.
+
+\bibitem{4016949}
+N.~Manjikian.
+\newblock Implementation of hardware multithreading in a pipelined processor.
+\newblock In {\em Circuits and Systems, 2006 IEEE North-East Workshop on},
+  pages 145--148, June 2006.
+
+\bibitem{31522}
+P.G. Paulin and J.P. Knight.
+\newblock Force-directed scheduling for the behavioral synthesis of asics.
+\newblock {\em Computer-Aided Design of Integrated Circuits and Systems, IEEE
+  Transactions on}, 8(6):661--679, Jun 1989.
+
+\bibitem{A0}
+Juergen Sauermann.
+\newblock http://opencores.org/usercontent,doc,126270725.
+
+\end{thebibliography}

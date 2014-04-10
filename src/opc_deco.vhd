@@ -95,13 +95,13 @@ begin
                         Q_RRRRR(4 downto 3) <= "10";    -- regs 16 to 23
                         Q_ALU_OP <= ALU_MULT;
                         if I_OPC(7) = '0' then
-                            if I_OPC(3) = '0' then 
+                            if I_OPC(3) = '0' then
                                 Q_IMM(7 downto 5) <= MULT_SU;
                             else
                                 Q_IMM(7 downto 5) <= MULT_FUU;
                             end if;
                         else
-                            if I_OPC(3) = '0' then 
+                            if I_OPC(3) = '0' then
                                 Q_IMM(7 downto 5) <= MULT_FSS;
                             else
                                 Q_IMM(7 downto 5) <= MULT_FSU;
@@ -197,7 +197,7 @@ begin
                 Q_DDDDD(4) <= '1';    -- Rd = 16...31
                 Q_WE_D <= '0' & I_OPC(14);
                 Q_WE_F <= '1';
-            
+
             when "010000" | "010001" | "010010" | "010011" =>
                 --
                 -- 0100 KKKK dddd KKKK - SBCI
@@ -333,7 +333,7 @@ begin
                                 Q_WE_M <= "11";
                                 Q_WE_XYZS <= '1';
                             end if;
-                            
+
                         when "1010"  =>              -- 1001 010x xxxx 1010
                             --
                             --  1001 010d dddd 1010 - DEC Rd
@@ -342,14 +342,14 @@ begin
                             Q_WE_D <= "01";
                             Q_WE_F <= '1';
 
-                                
+
                         when "1100" | "1101"  =>
                             --
                             --  1001 010k kkkk 110k - JMP (k = 0 for 16 bit)
                             --  kkkk kkkk kkkk kkkk
                             --
                             Q_PC_OP <= PC_LD_I;
-                     
+
                         when "1110" | "1111"  =>      -- 1001 010x xxxx 111x
                             --
                             --  1001 010k kkkk 111k - CALL (k = 0)
@@ -375,7 +375,7 @@ begin
                     Q_IMM(3 downto 0) <= I_OPC(3 downto 0);
                     Q_RSEL <= RS_IMM;
                     Q_DDDDD <= "11" & I_OPC(5 downto 4) & "0";
-                    
+
                     Q_WE_D <= "11";
                     Q_WE_F <= '1';
                 end if; -- I_OPC(9) = 0/1
